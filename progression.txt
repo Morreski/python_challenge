@@ -2,3 +2,5 @@ http://www.pythonchallenge.com/pc/def/map.html
 http://www.pythonchallenge.com/pc/def/ocr.html
 http://www.pythonchallenge.com/pc/def/equality.html
 http://www.pythonchallenge.com/pc/def/linkedlist.html
+http://www.pythonchallenge.com/pc/def/peak.html
+
