@@ -7,7 +7,4 @@ if __name__ == "__main__":
     mysterious_list = pickle.load(response)
 
     for sublist in mysterious_list:
-        line = ''
-        for word in sublist:
-            line += word[0] * word[1]
-        print(line)
+        print(''.join([line[0] * line[1] for line in sublist]))
