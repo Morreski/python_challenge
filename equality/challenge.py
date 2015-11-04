@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-import requests
+from urllib import request
 import re
 
 if __name__ == "__main__":
 
-    response = requests.get("http://www.pythonchallenge.com/pc/def/equality.html")
-    html = response.content.decode("utf-8").split("<!--")[-1]
+    response = request.urlopen("http://www.pythonchallenge.com/pc/def/equality.html")
+    html = response.read().decode("utf-8").split("<!--")[-1]
 
     regex = re.compile("(?<![A-Z])[A-Z]{3}[a-z][A-Z]{3}(?![A-Z])")
 

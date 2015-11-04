@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
-import requests
+from urllib import request
 from string import ascii_letters
 
 if __name__ == "__main__":
 
-    response = requests.get("http://www.pythonchallenge.com/pc/def/ocr.html")
-    html = response.content.decode("utf-8").split("below")[-1]
+    response = request.urlopen("http://www.pythonchallenge.com/pc/def/ocr.html")
+    html = response.read().decode("utf-8").split("below")[-1]
 
     seeking_chars = list(ascii_letters) + [" ", ".", "'"]
 
