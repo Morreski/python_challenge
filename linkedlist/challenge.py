@@ -8,7 +8,7 @@ def get_next_number(n):
     number = response.split()[-1]
     return number
 
-if __name__=="__main__":
+if __name__ == "__main__":
     number = 12345
     for _ in range(400):
         number = get_next_number(number)
@@ -16,4 +16,3 @@ if __name__=="__main__":
             int(number)
         except ValueError:
             print(number)
-      
